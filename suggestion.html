@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Suggestion</title>
+</head>
+<body>
+    <h1 class="title">Suggestion</h1>
+    <div class="suggestion">
+        <form onsubmit="sendmail()" name="suggform">
+            <label>Name:</label>
+            <input class="input" type="text" name="name"><br><br>
+            <lablel>Email:</lablel>
+            <input class="input" type="email" required name="mail"><br><br>
+            <label>Suggestion:</label>
+            <textarea required cols="50" rows="5" onfocu></textarea>
+            <p id="add" onclick="sendmail()" required>Verify</p><p onclick="sendmail()"><input class="input" id="border" name="var" type="number" aria-required="true"></p>
+            <button style="font-size: 50px;" type="submit">Submit</button>
+            <a href="index.html"> Back</a>
+        </form>
+        <script src="portfolio.js"></script>
+    </div>
+    <img class="suggestion_logo" src="logo.png">
+</body>
+</html>

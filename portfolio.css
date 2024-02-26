@@ -1,0 +1,185 @@
+@media screen and (min-width:320px) and (max-width:480px){
+    *
+    {
+        background-color: black;
+        color: white;
+    }
+    /**navigation bar**/
+    .nav{
+        display: flex;
+    }
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+    .nav_main{
+        margin-top: 10px;
+        margin-left: 60px;
+        font-size: 40px;
+        width: 480px;
+        height: 100px;
+    }
+    .nav_main a:hover{
+        background-color: cyan;
+    }   
+}
+@media screen and (min-width:1025px) and (max-width:3840px){
+    *
+    {
+        background-color: black;
+        color: white;
+    }
+    /**navigation bar**/
+    .nav{
+        display: flex;
+        width: 1050px;
+    }
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+    .nav_main{
+        margin-top: 10px;
+        margin-left: 60px;
+        font-size: 40px;
+        width: 950px;
+        height: 100px;
+    }
+    .nav_main a:hover{
+        background-color: cyan;
+    }
+    .logo img:hover{
+        background-color: cyan;
+        width: 100px;
+        height: 100px;
+    }
+    .bar{
+        text-align: right;
+    }
+    /** Introduction**/
+    .intro{
+        width: 300px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .hello{
+        text-align: center;
+    }
+    .portfolio{
+        margin-top: 30px;
+        margin-left: 100px;
+        height: 130px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .download{
+        height: 30px;
+        font-size: 35px;
+        border: none;
+    }
+    /**programing language**/
+    .sub_title{
+        text-align: center;
+        font-size: 60px;
+    }
+    .programing{
+        justify-content: space-between;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .programing img:hover{
+        background-color: cyan;
+        width:250px;
+        height:250px;
+    }
+    /**social**/
+    .social{
+        justify-content: space-evenly;
+        height: 50px;
+        border-radius: 100%;
+        width: 50px; 
+    }
+    #social{
+        justify-content: space-between;
+        float: center;
+        margin-left: 45%;
+    }
+    #social img:hover
+    {
+        background-color: aliceblue;
+        padding: 10px;
+    }
+    /**suggestion
+       title**/
+    .title{
+        font-size: 100px;
+        text-align: center;
+    }
+    /**suggestion**/
+    .suggestion{
+        font-size: 60px;
+        margin: 60px;
+    }
+    .suggestion_logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 250px;
+    }
+    .input{
+        height: 60px;
+        width: 500px;
+        border: none;
+        font-size: 60px;
+    }
+    /**contact
+       title**/
+    .title{
+        text-align: center;
+    }
+    .contact{
+        font-size: 160px;
+        margin: 60px;
+    }
+    .back{
+        float: center;
+    }
+}
+.c
+{
+    background-color: black;
+    transition: 100s;
+}
+.clogo{
+    animation: move 3s ease-in 0.5s infinite alternate;
+}
+.cpplogo{
+    animation: move 3s ease-in 1.5s infinite alternate;
+}
+.htmllogo{
+    animation: move 3s ease-in 2.5s infinite alternate;
+}
+.csslogo{
+    animation: move 3s ease-in 3.5s infinite alternate;
+}
+.jslogo{
+    animation: move 3s ease-in 4.5s infinite alternate;
+}
+
+@keyframes move{
+    from {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
+.marq{
+    font-size: 30px;
+}
+.marq :hover{
+  background-color: red;
+}
