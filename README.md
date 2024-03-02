@@ -1,2 +1,2 @@
 # My-Portfolio
-hi i am kiran aaglawe , and this is my portfolio.
+hi i am kiran aglawe and this is my portfolio.
