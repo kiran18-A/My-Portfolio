@@ -18,10 +18,8 @@
         font-size: 40px;
         width: 480px;
         height: 100px;
-    }
-    .nav_main a:hover{
-        background-color: cyan;
-    }   
+        background-color: rgb(255, 72, 0);
+    }  
 }
 @media screen and (min-width:1025px) and (max-width:3840px){
     *
@@ -32,53 +30,40 @@
     /**navigation bar**/
     .nav{
         display: flex;
-        width: 1050px;
-    }
-    .logo{
-        height: 100px;
-        width: 100px;
     }
     .nav_main{
         margin-top: 10px;
         margin-left: 60px;
         font-size: 40px;
-        width: 950px;
-        height: 100px;
+        width: 850px;
+        height: 50px;
+        text-decoration: none;
+        background-color: rgb(255, 72, 0);
     }
-    .nav_main a:hover{
-        background-color: cyan;
-    }
-    .logo img:hover{
-        background-color: cyan;
-        width: 100px;
-        height: 100px;
-    }
-    .bar{
-        text-align: right;
-    }
+    .nav_main a{
+        text-decoration: none;
+        justify-content: space-between;
+        background: transparent;
+   } 
     /** Introduction**/
+    .background{
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        height: 600px;
+    }
     .intro{
-        width: 300px;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
+        background: transparent;
     }
-    .hello{
-        text-align: center;
+    .name{
+        color:rgb(255, 72, 0);
     }
-    .portfolio{
-        margin-top: 30px;
-        margin-left: 100px;
-        height: 130px;
-        width: 100px;
-        border-radius: 50%;
+    .know_more{
+        height: 40px;
+        font-size: 30px;
+        border: transparent;
+        border-radius: 30px;
     }
-    .download{
-        height: 30px;
-        font-size: 35px;
-        border: none;
-    }
-    /**programing language**/
+    /**programing language
     .sub_title{
         text-align: center;
         font-size: 60px;
@@ -112,12 +97,12 @@
         padding: 10px;
     }
     /**suggestion
-       title**/
+       title
     .title{
         font-size: 100px;
         text-align: center;
     }
-    /**suggestion**/
+    /**suggestion
     .suggestion{
         font-size: 60px;
         margin: 60px;
@@ -136,7 +121,7 @@
         font-size: 60px;
     }
     /**contact
-       title**/
+       title
     .title{
         text-align: center;
     }
@@ -146,7 +131,7 @@
     }
     .back{
         float: center;
-    }
+    }**/
 }
 .c
 {
