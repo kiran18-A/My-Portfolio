@@ -30,6 +30,7 @@
     /**navigation bar**/
     .nav{
         display: flex;
+        
     }
     .nav_main{
         margin-top: 10px;
@@ -38,18 +39,23 @@
         width: 850px;
         height: 50px;
         text-decoration: none;
-        background-color: rgb(255, 72, 0);
+        background-color: black;
     }
     .nav_main a{
         text-decoration: none;
-        justify-content: space-between;
+        padding: 10px;
         background: transparent;
    } 
+   .nav_main a:hover{
+        background-color: red;
+        border-radius: 30px;
+   }
     /** Introduction**/
     .background{
         background-image: url("background.jpg");
         background-repeat: no-repeat;
-        height: 600px;
+        
+        height: 320px;
     }
     .intro{
         background: transparent;
@@ -63,6 +69,31 @@
         border: transparent;
         border-radius: 30px;
     }
+    /**Skills**/
+    .skill{
+        height: 300px;
+        background-color: rgb(37, 37, 37);
+        display: flex;
+    }
+    .skill_heading{
+        text-align: center;
+    }
+    .lable{
+        background: transparent;
+    }
+    progress {
+        width: 300px;
+        height: 25px;
+        border: 2px solid  rgb(37, 37, 37);
+     }
+     progress::-webkit-progress-bar {
+        background-color: rgb(243, 238, 238);        
+     }
+     progress::-webkit-progress-value {
+        background-color: rgb(252, 124, 124);
+     }
+    /**Project**/
+    /**Contact**/
     /**programing language
     .sub_title{
         text-align: center;
