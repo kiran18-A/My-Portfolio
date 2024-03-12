@@ -1,25 +1,135 @@
-@media screen and (min-width:320px) and (max-width:480px){
+@media screen and (min-width:0px) and (max-width:780px){
     *
     {
-        background-color: black;
+        background-color: black;    
         color: white;
     }
     /**navigation bar**/
     .nav{
+        margin-top: 10px;
         display: flex;
+        
     }
     .logo{
         height: 100px;
-        width: 100px;
+        width: 50px;
     }
     .nav_main{
         margin-top: 10px;
         margin-left: 60px;
         font-size: 40px;
-        width: 480px;
+        width: 850px;
+        height: 50px;
+        text-decoration: none;
+        background-color: black;
+    }
+    .nav_main a{
+        text-decoration: none;
+        padding: 10px;
+        background: transparent;
+   }
+   .nav_main a:hover{
+    background-color: red;
+    border-radius: 30px;
+    }
+    /** Introduction**/
+    .background{
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        height: 220px;
+    }
+    .intro{
+        background: transparent;
+    }
+    .name{
+        color:rgb(255, 72, 0);
+    }
+    .know_more{
+        height: 40px;
+        font-size: 30px;
+        border: transparent;
+        border-radius: 30px;
+    }
+    /**Skills**/
+    .skill{
+        height: 500px;
+        background-color: rgb(37, 37, 37);
+    }
+    .skill1{
+        height: 300px;
+        background-color: rgb(37, 37, 37);
+        display: flex;
+    }
+    .skill_heading{
+        text-align: center;
+    }
+    .lable{
+        background: transparent;
+    }
+    progress {
+        width: 300px;
+        height: 25px;
+        border: 2px solid  rgb(37, 37, 37);
+     }
+     progress::-webkit-progress-bar {
+        background-color: rgb(243, 238, 238);        
+     }
+     progress::-webkit-progress-value {
+        background-color: rgb(252, 124, 124);
+     }
+}
+@media screen and (min-width:781px) and (max-width:1024px){
+    *
+    {
+        background-color: black;    
+        color: white;
+    }
+    /**navigation bar**/
+    .nav{
+        margin-top: 10px;
+        display: flex;
+        
+    }
+    .logo{
         height: 100px;
-        background-color: rgb(255, 72, 0);
-    }  
+        width: 50px;
+    }
+    .nav_main{
+        margin-top: 10px;
+        margin-left: 60px;
+        font-size: 40px;
+        width: 850px;
+        height: 50px;
+        text-decoration: none;
+        background-color: black;
+    }
+    .nav_main a{
+        text-decoration: none;
+        padding: 10px;
+        background: transparent;
+   }
+   .nav_main a:hover{
+    background-color: red;
+    border-radius: 30px;
+    }
+    /** Introduction**/
+    .background{
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        height: 220px;
+    }
+    .intro{
+        background: transparent;
+    }
+    .name{
+        color:rgb(255, 72, 0);
+    }
+    .know_more{
+        height: 40px;
+        font-size: 30px;
+        border: transparent;
+        border-radius: 30px;
+    }
 }
 @media screen and (min-width:1025px) and (max-width:3840px){
     *
@@ -54,7 +164,6 @@
     .background{
         background-image: url("background.jpg");
         background-repeat: no-repeat;
-        
         height: 320px;
     }
     .intro{
