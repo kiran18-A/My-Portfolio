@@ -202,22 +202,32 @@
         background-color: rgb(252, 124, 124);
      }
     /**Project**/
-    /**Contact**/
-    /**programing language
-    .sub_title{
-        text-align: center;
-        font-size: 60px;
+    .hishob{
+        border: 1px white solid;
+        border-radius: 10px;
+        
     }
-    .programing{
-        justify-content: space-between;
-        display: flex;
+    /**Contact**/
+    .contact{
+        background-color: rgb(44, 8, 8);
+    }
+    .cname{
+        background: transparent;
+    }
+    .contact input{
+        background-color: white;
+        color: black;
+        border-color: blanchedalmond;
+        border-radius: 30px;
+    }
+    .contact input:hover{
+        background-color: cyan;
+    }
+    .c_center{
+        display: block;
         margin-left: auto;
         margin-right: auto;
-    }
-    .programing img:hover{
-        background-color: cyan;
-        width:250px;
-        height:250px;
+        width: 50%;
     }
     /**social**/
     .social{
@@ -236,42 +246,6 @@
         background-color: aliceblue;
         padding: 10px;
     }
-    /**suggestion
-       title
-    .title{
-        font-size: 100px;
-        text-align: center;
-    }
-    /**suggestion
-    .suggestion{
-        font-size: 60px;
-        margin: 60px;
-    }
-    .suggestion_logo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 250px;
-        height: 250px;
-    }
-    .input{
-        height: 60px;
-        width: 500px;
-        border: none;
-        font-size: 60px;
-    }
-    /**contact
-       title
-    .title{
-        text-align: center;
-    }
-    .contact{
-        font-size: 160px;
-        margin: 60px;
-    }
-    .back{
-        float: center;
-    }**/
 }
 .c
 {
