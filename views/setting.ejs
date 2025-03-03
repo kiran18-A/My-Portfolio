@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Setting</title>
+	<style>
+		*{
+			background-color: black;
+			color: aliceblue;
+		}
+		input{
+			background-color: antiquewhite;
+			color: rgb(47, 43, 38);
+			border-radius: 30px;
+			font-size: 30px;
+		}
+		#popupDialog {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(227, 206, 206, 0.1);
+            z-index: 1000;
+        }
+		#overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 999;
+		}
+		@media screen and (min-width:1025px) and (max-width:3840px){
+			.logo{
+				height: 400px;
+				width: 500px;
+			}
+			.align{
+				display: flex;
+			}
+			.space{
+				padding: 30px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<center><img src="logo.png" class="logo"></center>
+	<center><h1>Message</h1></center>
+	<% for(let message of messages) { %>
+		<div class="align">
+			<div>
+				<b>
+					Date : <%= message.Date %><br><br>
+					Name : <%= message.Name %> <br><br>
+					Email: <%= message.Email %> <br><br>
+					Message: <%= message.message %>
+				</b>
+			</div>
+		</div>
+		<hr>
+	<% } %>
+	<hr>
+	<center><h1>Project</h1></center>
+	<center>
+		<form method="post" action="/project">
+			<label>Name:</label>
+			<input name="name" type="text"><br><br>
+			<label>Descripion:</label>
+			<textarea class="cname" name="Descripion" required cols="50" rows="5"></textarea><br><br>
+			<label>Link:</label>
+			<input type="text" name="link"><br><br>
+			<button type="submit">Submit</button>
+		</form>
+	</center>
+	<hr>
+	<hr>
+	<div class="align">
+		<div class="space">
+			<center><h1>Edit Name</h1></center>
+			<h4>Current Name: <%= names.name %></h4>
+			<h4><form method="post" action="/setname">
+				<label>New Name:</label>
+				<input name="name" type="text"><br><br>
+				<label>Password:</label>
+				<input name="epass" type="password">
+				<br><br>
+				<center><button type="submit">Edit</button></center>
+			</form></h4>
+		</div>
+		<div class="space">
+			<center><h1>Add Skill</h1></center>
+			<h4>Programing Languages</h4>
+			<form method="post" action="/programinng">
+				<label>Programinng Language Name:</label>
+				<input type="text" name="language_name"><br><br>
+				<label>Persentage Language Known</label>
+				<input name="language_persentage"><br><br>
+				<center><button type="submit">Add</button></center>
+			</form>
+			<h4>Web Development</h4>
+			<form method="post" action="/web">
+				<label>Web Tecnology Name:</label>
+				<input name="language_name">
+				<br><br>
+				<label>Persentage Web Tecnology Known</label>
+				<input name="language_persentage" type="number"><br><br>
+				<center><button type="submit">Add</button></center>
+			</form>
+			<h4>Data Base</h4>
+			<form method="post" action="/database">
+				<label>Database Name:</label>
+				<input type="text" name="language_name">
+				<br><br>
+				<label>Persentage Database Known</label>
+				<input name="language_persentage"><br><br>
+				<center><button type="submit">Add</button></center>
+			</form>
+			<h4>Languages</h4>
+			<form method="post" action="/language">
+				<label>Language Name:</label>
+				<input type="text" name="language_name">
+				<br><br>
+				<label>Persentage Language Known</label>
+				<input name="language_persentage"><br><br>
+				<center><button type="submit">Add</button></center>
+			</form>
+		</div>
+		<div>
+			<center><h1>Remove Skill</h1></center>
+			<form method="post" action="/showinfo">
+				<label>Type:</label>
+				<select name="option" style="border: none;">
+					<option value="Programing Language">Programinng Language</option>
+					<option value="Web Development">Web Development</option>
+					<option value="Datebase">Data Base</option>
+					<option value="language">Language</option>
+				</select>
+				<button type="submit">Show</button>
+			</form>
+			<center><h3><%= option %></h3></center>
+			<% for(let skill of skills){ %>
+				<% if(skill.skill_name==option){ %>
+					<h4>Skill Name:<%= skill.skill_type %></h4>
+					<h4>Persentage:<%= skill.persentage %></h4>
+					<form method="post" action="/remove/<%= skill.id %>">
+						<button>Remove</button>
+					</form>
+					<br>
+					<button onclick="popupFn()">
+						Edit
+					</button>
+					<div id="overlay"></div>
+					<div id="popupDialog">
+						<center><h2>Edit <%= skill.skill_type %></h2></center>
+						<form method="post" action="/edit/<%= skill.id %>">
+							<label>Persentage</label>
+							<input name="persentage" type="number">
+							<br><br>
+							<center><button type="submit">
+								Edit
+							</button></center>
+						</form>
+					</div>
+					<hr>
+				<% } %>
+			<% } %>
+		</div>
+	</div>
+	<hr>
+	<script>
+		function popupFn() {
+            document.getElementById(
+                "overlay"
+            ).style.display = "block";
+            document.getElementById(
+                "popupDialog"
+            ).style.display = "block";
+        }
+	</script>
+</body>
+
+</html>

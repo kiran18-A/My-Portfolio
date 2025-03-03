@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Home</title>
+    <style>
+        @media screen and (min-width:0px) and (max-width:780px){
+            *
+    {
+        background-color: black;
+        color: white;
+    }
+    /**navigation bar**/
+    .nav{
+        display: flex; 
+    }
+    .nav_main{
+        margin-top: 10px;
+        margin-left: 60px;
+        font-size: 20px;
+        width: 850px;
+        height: 50px;
+        text-decoration: none;
+        background-color: black;
+    }
+    .nav_main a{
+        text-decoration: none;
+        padding: 10px;
+        background: transparent;
+   } 
+   .nav_main a:hover{
+        background-color: red;
+        border-radius: 30px;
+   }
+    /** Introduction**/
+    .background{
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        height: 320px;
+    }
+    .intro{
+        background-color: rgb(37, 37, 37);
+        font-size: 30px;
+    }
+    .name{
+        color:rgb(255, 72, 0);
+    }
+    .know_more{
+        height: 40px;
+        font-size: 30px;
+        border: transparent;
+        border-radius: 30px;
+    }
+    .myphoto{
+        margin-left: 10%;
+    }
+    /**Skills**/
+    .skill{
+        height: auto;
+        background-color: rgb(37, 37, 37);
+    }
+    .skill_heading{
+        text-align: center;
+    }
+    .lable{
+        background: transparent;
+    }
+    progress {
+        width: 300px;
+        height: 25px;
+        border: 2px solid  rgb(37, 37, 37);
+     }
+     progress::-webkit-progress-bar {
+        background-color: rgb(243, 238, 238);        
+     }
+     progress::-webkit-progress-value {
+        background-color: rgb(252, 124, 124);
+     }
+    /**Project**/
+    .hishob{
+        border: 1px white solid;
+        border-radius: 10px;
+        
+    }
+    /**Contact**/
+    .contact{
+        background-color: rgb(37, 37, 37);
+    }
+    .cname{
+        background: transparent;
+    }
+    .contact input{
+        background-color: white;
+        color: black;
+        border-color: blanchedalmond;
+        border-radius: 30px;
+    }
+    .contact input:hover{
+        background-color: cyan;
+    }
+    .c_center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    /**social**/
+    .social{
+        justify-content: space-evenly;
+        height: 50px;
+        border-radius: 100%;
+        width: 50px; 
+    }
+    #social{
+        justify-content: space-between;
+        float: center;
+        margin-left: 45%;
+    }
+    #social img:hover
+    {
+        background-color: aliceblue;
+        padding: 10px;
+    }
+}
+@media screen and (min-width:781px) and (max-width:1024px){
+    *
+    {
+        background-color: black;
+        color: white;
+    }
+    /**navigation bar**/
+    .nav{
+        display: flex; 
+    }
+    .nav_main{
+        margin-top: 10px;
+        margin-left: 60px;
+        font-size: 30px;
+        width: 850px;
+        height: 50px;
+        text-decoration: none;
+        background-color: black;
+    }
+    .nav_main a{
+        text-decoration: none;
+        padding: 10px;
+        background: transparent;
+   } 
+   .nav_main a:hover{
+        background-color: red;
+        border-radius: 30px;
+   }
+    /** Introduction**/
+    .background{
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        height: 320px;
+    }
+    .intro{
+        background: transparent;
+        font-size: 30px;
+    }
+    .name{
+        color:rgb(255, 72, 0);
+    }
+    .know_more{
+        height: 40px;
+        font-size: 30px;
+        border: transparent;
+        border-radius: 30px;
+    }
+    .myphoto{
+        margin-left: 10%;
+    }
+    /**Skills**/
+    .skill{
+        height: auto;
+        background-color: rgb(37, 37, 37);
+    }
+    .skill_heading{
+        text-align: center;
+    }
+    .lable{
+        background: transparent;
+    }
+    progress {
+        width: 300px;
+        height: 25px;
+        border: 2px solid  rgb(37, 37, 37);
+     }
+     progress::-webkit-progress-bar {
+        background-color: rgb(243, 238, 238);        
+     }
+     progress::-webkit-progress-value {
+        background-color: rgb(252, 124, 124);
+     }
+    /**Project**/
+    .hishob{
+        border: 1px white solid;
+        border-radius: 10px;
+        
+    }
+    /**Contact**/
+    .contact{
+        background-color: rgb(37, 37, 37);
+    }
+    .cname{
+        background: transparent;
+    }
+    .contact input{
+        background-color: white;
+        color: black;
+        border-color: blanchedalmond;
+        border-radius: 30px;
+    }
+    .contact input:hover{
+        background-color: cyan;
+    }
+    .c_center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    /**social**/
+    .social{
+        justify-content: space-evenly;
+        height: 50px;
+        border-radius: 100%;
+        width: 50px; 
+    }
+    #social{
+        justify-content: space-between;
+        float: center;
+        margin-left: 45%;
+    }
+    #social img:hover
+    {
+        background-color: aliceblue;
+        padding: 10px;
+    }
+}
+@media screen and (min-width:1025px) and (max-width:3840px){
+    *
+    {
+        background-color: black;
+        color: white;
+    }
+    /**navigation bar**/
+    .nav{
+        display: flex; 
+    }
+    .nav_main{
+        margin-top: 10px;
+        margin-left: 60px;
+        font-size: 40px;
+        width: 850px;
+        height: 50px;
+        text-decoration: none;
+        background-color: black;
+    }
+    .nav_main a{
+        text-decoration: none;
+        padding: 10px;
+        background: transparent;
+   } 
+   .nav_main a:hover{
+        background-color: red;
+        border-radius: 30px;
+   }
+    /** Introduction**/
+    .background{
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        height: 320px;
+    }
+    .intro{
+        background: transparent;
+        font-size: 30px;
+    }
+    .name{
+        color:rgb(255, 72, 0);
+    }
+    .know_more{
+        height: 40px;
+        font-size: 30px;
+        border: transparent;
+        border-radius: 30px;
+    }
+    .myphoto{
+        margin-left: 10%;
+    }
+    /**Skills**/
+    .skill{
+        height: auto;
+        background-color: rgb(37, 37, 37);
+        display: flex;
+    }
+    .skill_heading{
+        text-align: center;
+    }
+    .lable{
+        background: transparent;
+    }
+    progress {
+        width: 300px;
+        height: 25px;
+        border: 2px solid  rgb(37, 37, 37);
+     }
+     progress::-webkit-progress-bar {
+        background-color: rgb(243, 238, 238);        
+     }
+     progress::-webkit-progress-value {
+        background-color: rgb(252, 124, 124);
+     }
+    /**Project**/
+    .project{
+        display: flex;
+        background-color: rgb(37, 37, 37);
+    }
+    .single_project{
+        border: 1px white solid;
+        background: transparent;
+        font-size: 30px;
+        border-radius: 10px;
+        
+    }
+    /**Contact**/
+    .contact{
+        background-color: rgb(37, 37, 37);
+    }
+    .cname{
+        background: transparent;
+    }
+    .contact input{
+        background-color: white;
+        color: black;
+        border-color: blanchedalmond;
+        border-radius: 30px;
+    }
+    .contact input:hover{
+        background-color: cyan;
+    }
+    .c_center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    /**social**/
+    .social{
+        justify-content: space-evenly;
+        height: 50px;
+        border-radius: 100%;
+        width: 50px; 
+    }
+    #social{
+        justify-content: space-between;
+        float: center;
+        margin-left: 45%;
+    }
+    #social img:hover
+    {
+        background-color: aliceblue;
+        padding: 10px;
+    }
+}
+.c
+{
+    background-color: black;
+    transition: 100s;
+}
+.clogo{
+    animation: move 3s ease-in 0.5s infinite alternate;
+}
+.cpplogo{
+    animation: move 3s ease-in 1.5s infinite alternate;
+}
+.htmllogo{
+    animation: move 3s ease-in 2.5s infinite alternate;
+}
+.csslogo{
+    animation: move 3s ease-in 3.5s infinite alternate;
+}
+.jslogo{
+    animation: move 3s ease-in 4.5s infinite alternate;
+}
+.algin{
+    display: flex;
+}
+
+@keyframes move{
+    from {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
+.marq{
+    font-size: 30px;
+}
+.marq :hover{
+  background-color: red;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.png" width="100px">
+        </div>
+        <div class="nav_main">
+            <a href="#intro">Intro</a>
+            <a href="#skill">Skill</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Suggestion</a>
+        </div>
+        <div class="logo">
+            <a href="password"><img src="setting.png" width="50px" height=""></a>    
+        </div>
+        <div class="myphoto">
+            <img src="myphoto.png" width="50px" style="border-radius: 30%;">    
+        </div>
+    </div>
+    <div class="align">
+        <div id="intro" class="background">
+            <center>
+                <h1 class="intro">Hello,</h1>
+                <h3 class="intro">I am</h3>
+                <h1 class="intro name"><%= names.name %>.........</h1>
+                <img src="myphoto.png" height="130px" style="border-radius: 100%;">
+            </center>
+        </div>
+    </div>
+    <h1 class="skill_heading intro">Skill</h1>
+    <div class="skill" id="skill">     
+            <div class="intro">
+                <p class="intro">Programing Languages</p>
+                <% for(skill of skills){ %>
+                    <% if(skill.skill_name=="Programing Language"){ %>
+                        <label class="intro" for="c"><%= skill.skill_type %>:</label>
+                        <progress value="<%= skill.persentage %>" max="100" class="progress"></progress>
+                        <br><br>
+                    <% } %>
+                <% } %>
+            </div>
+            <div class="intro">
+                <p class="intro">Web Development</p>
+                <% for(skill of skills){ %>
+                    <% if(skill.skill_name=="Web Development"){ %>
+                        <label class="intro" for="c"><%= skill.skill_type %>:</label>
+                        <progress value="<%= skill.persentage %>" max="100" class="progress"></progress>
+                        <br><br>
+                    <% } %>
+                <% } %>
+            </div>
+        <div class="intro">
+            <p class="intro">Data Base</p>
+            <% for(skill of skills){ %>
+                <% if(skill.skill_name=="Datebase"){ %>
+                    <label class="intro" for="c"><%= skill.skill_type %>:</label>
+                    <progress value="<%= skill.persentage %>" max="100" class="progress"></progress>
+                    <br><br>
+                <% } %>
+            <% } %>
+        </div>
+        <div class="intro">
+            <p class="intro">Languages</p>
+            <% for(skill of skills){ %>
+                <% if(skill.skill_name=="language"){ %>
+                    <label class="intro" for="c"><%= skill.skill_type %>:</label>
+                    <progress value="<%= skill.persentage %>" max="100" class="progress"></progress>
+                    <br><br>
+                <% } %>
+            <% } %>
+        </div>
+    </div>
+    <h1 class="skill_heading intro">Project</h1>
+    <% for(let project of projects){ %>
+        <div id="project" class="project">
+            <div class="single_project">
+                    <a href="<%= project.Link %>"><h1><%= project.Name %></h1></a>
+                    <p><%= project.Descripion %></p>
+            </div>
+        </div>
+    <% } %>
+    </div>
+    <div class="contact" id="contact">
+        <h1 class="skill_heading intro">Suggestion</h1>
+        <div class="contact c_center">
+            <form method="post" action="/message" class="contact">
+                <label class="cname">Name:</label>
+                <input type="text" name="name" placeholder="Name">
+                <br><br>
+                <label class="cname">Email:</label>
+                <input type="email" name="email" placeholder="Email@gmail.com">
+                <br><br>
+                <label class="cname">Descripion</label>
+                <textarea class="cname" name="messages" required cols="50" rows="5"></textarea>
+                <br><br>
+                <button class="contact">Submit</button>
+            </form>
+        </div> 
+    </div>
+    
+    </div>
+		<br>
+		<br><br>
+		<hr>
+    <div id="social">
+        <a href="https://github.com/kiran18-A"><img class="social" style="border-radius: 50%;" height="60px" src="github.png" alt="facebok"></a>
+        <a href="https://instagram.com/kiranaglawepatil?igshid=NzZlODBkYWE4Ng=="><img class="social" style="border-radius: 50%;" height="60px" src="insta.png" alt="instagram"></a>
+        <a href="#"><img class="social" style="border-radius: 50%;" height="60px" src="fac.png" alt="facebok"></a>
+        <a href="https://www.linkedin.com/in/kiran-aglawe-1909a7287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img class="social" style="border-radius: 50%;" height="60px" src="link.png" alt="link"></a>
+        <a href="https://www.google.com/search?q=facebook+login&oq=face&gs_lcrp=EgZjaHJvbWUqDQgDEAAYgwEYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYxwEYsQMY0QMYgAQyCQgCEEUYORiABDINCAMQABiDARixAxiABDINCAQQABiDARixAxiABDIKCAUQABixAxiABDIHCAYQABiABDIGCAcQBRhA0gEINzY1NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+    <img class="social" style="border-radius: 40%;" height="30px" src="fac.png" alt="facebook"></a>
+      
+    </div>
+
+		<marquee behavior=alternate class="marq"><p class="cebter">Design & own by <b><u>Kiran Aglawe</u></b><pre>Visitors:<%= count %></pre> </p></marquee>
+				<center><img src="logo.png" width="100px"></center>
+		<script>
+		name=document.document.querySelector("h1");
+		document.write(name);
+		name.style.color=green;
+		</script>
+</body>
+</html>
