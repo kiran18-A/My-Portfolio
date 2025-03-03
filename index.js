@@ -89,7 +89,7 @@ app.get("/home",async (res,req)=>{
   for(let visitor of visitors){
     count=count+1;
   }
-  console.log(names)
+  console.log(names);
   req.render("info.ejs",{names,skills,count,projects});
   });
 
@@ -110,6 +110,7 @@ app.get("/setting",async (res,req)=>{
   let names=await myname.findById(id);
   let skills=await skill.find();
   let messages=await message.find();
+  let visitors=await visitor.find();
   let option="Programing Language";
   if(names==null){
     let newnote = new myname({
@@ -119,7 +120,7 @@ app.get("/setting",async (res,req)=>{
   await newnote.save(); 
   }
   names=await myname.findById(id);
-  req.render("setting.ejs",{names,option,skills,messages});
+  req.render("setting.ejs",{names,option,skills,messages,visitors});
 });
 
 app.post("/setname",async (res,req)=>{
@@ -228,4 +229,16 @@ app.post("/message",async(res,req)=>{
     Date: date
   });
   await newnote.save();
+});
+
+app.post("/remove_visitor/:id",async (res,req)=>{
+  let {id}= res.params;
+  await visitor.findByIdAndDelete(id);
+  req.redirect("/setting");
+});
+
+app.post("/remove_message/:id",async (res,req)=>{
+  let {id}= res.params;
+  await message.findByIdAndDelete(id);
+  req.redirect("/setting");
 });

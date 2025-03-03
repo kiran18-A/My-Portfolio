@@ -57,6 +57,18 @@
 
 <body>
 	<center><img src="logo.png" class="logo"></center>
+	<a href="/home">Back</a>
+	<hr>
+	<center><h1>Visitors</h1></center>
+	<% for(let visitor of visitors){ %>
+		<form method="post" action="/remove_message/<%= visitor.id %>">
+			<h2>
+				<%= visitor.name %>
+				<button type="submit">remove</button>
+			</h2>
+		</form>	
+	<% } %>
+	<hr>
 	<center><h1>Message</h1></center>
 	<% for(let message of messages) { %>
 		<div class="align">
@@ -67,6 +79,11 @@
 					Email: <%= message.Email %> <br><br>
 					Message: <%= message.message %>
 				</b>
+				<form method="post" action="/remove_message/<%= message.id %>">
+					<h2>
+						<button type="submit">remove</button>
+					</h2>
+				</form>
 			</div>
 		</div>
 		<hr>
