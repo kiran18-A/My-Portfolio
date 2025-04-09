@@ -26,7 +26,7 @@ const dbURL = process.env.ATLAS_URL;
 
 async function main(){
   await mongoose.connect(dbURL),{
-    socketTimeoutMS: 100000 // Set timeout to 30 seconds
+    socketTimeoutMS: 70000 // Set timeout to 30 seconds
   };   
 }
 
